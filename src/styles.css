@@ -35,3 +35,57 @@
 .course-review-empty,.history-empty{padding:18px 0;color:#84919e;font-size:13px}
 @media(max-width:970px){.course-details-grid{grid-template-columns:1fr}}
 @media(max-width:650px){.course-hero{flex-direction:column;padding:22px}.course-hero h1{font-size:28px}.course-mini-score{min-width:unset;width:100%}.detail-review-head{flex-direction:column}}
+
+/* Course finder, comparison strip, per-course summary */
+.course-finder{margin-bottom:20px}
+.course-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin-top:16px}
+.course-card{border:1px solid #e3edef;border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:10px;background:#fff}
+.course-card:hover{border-color:#217d87}
+.course-card-top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.course-card-top strong{display:block;color:#217d87;font-size:13px}
+.course-card-top span{font-size:13px;color:#33424f}
+.card-score{text-align:right}
+.card-score b{display:block;font:700 22px 'Source Serif 4',Georgia,serif;color:#217d87}
+.card-score small{font-size:11px;color:#6b7a88}
+.course-card p{margin:0;font-size:12px;line-height:1.5;color:#5d6b78;flex:1}
+.card-actions{display:flex;gap:8px;flex-wrap:wrap}
+.other-courses{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:0 0 16px}
+.other-courses small{font-size:10px;letter-spacing:.09em;font-weight:800;color:#6b7a88}
+.other-courses button{display:flex;flex-direction:column;align-items:flex-start;gap:2px;background:#f5f9fa;border:1px solid #e3edef;border-radius:8px;padding:6px 12px;cursor:pointer;color:#217d87}
+.other-courses button span{font-size:11px;color:#6b7a88}
+.other-courses button:hover,.other-courses button:focus-visible{border-color:#217d87;outline:none}
+.course-summary-row{display:flex;gap:24px;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;margin:6px 0 18px}
+.course-summary-row .rating-bars{flex:1;min-width:220px}
+.sort-select{display:flex;flex-direction:column;gap:4px;font-size:11px;color:#6b7a88}
+.field-hint{display:block;margin-top:4px;font-size:12px;color:#5d6b78}
+.field-hint .row-edit{margin-left:4px}
+.notice button{cursor:pointer}
+
+/* Redesign: guided hero, clearer cards, review chips, star picker */
+.hero{background:linear-gradient(135deg,#f0f8f8,#fff 70%);border:1px solid #e0edee;border-radius:14px;padding:26px 28px}
+.steps{display:flex;gap:10px;flex-wrap:wrap;list-style:none;padding:0;margin:16px 0 0}
+.steps li{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:600;color:#33505a;background:#fff;border:1px solid #dcebed;border-radius:99px;padding:6px 14px 6px 6px}
+.steps b{width:22px;height:22px;display:grid;place-items:center;border-radius:50%;background:#217d87;color:#fff;font-size:11px}
+.stars{color:#e0a73c;letter-spacing:1px;font-size:15px}
+.no-reviews{font-size:12px;color:#8a98a6}
+.you-badge{font-style:normal;font-size:11px;font-weight:700;color:#20786c;background:#e8f5f3;border-radius:99px;padding:3px 9px;align-self:flex-start}
+.course-card{transition:box-shadow .15s,border-color .15s}
+.course-card:hover{box-shadow:0 6px 18px #217d8722}
+.card-actions .primary-action{border:0;background:#217d87;color:#fff;border-radius:7px;font-size:12px;font-weight:700;padding:10px 13px}
+.card-actions .primary-action:hover{background:#17636b}
+.crumbs{display:flex;gap:18px;flex-wrap:wrap}
+.course-mini-score .post-review{margin-top:10px;width:100%}
+.course-review.mine{background:#f6fbfb;margin:0 -12px;padding:17px 12px 13px;border-radius:8px}
+.reviewer{display:flex;align-items:center;gap:9px}
+.avatar{width:28px;height:28px;border-radius:50%;background:#dcecef;color:#217d87;font-style:normal;font-weight:700;display:grid;place-items:center;font-size:12px}
+.chips{display:flex;gap:8px;margin-bottom:12px}
+.chip{border:1px solid #dce5ea;background:#fff;color:#607485;border-radius:99px;padding:7px 15px;font-size:12px;font-weight:600}
+.chip.on{background:#217d87;border-color:#217d87;color:#fff}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:18px;font-size:12px;color:#5a6878}
+.star-picker{display:flex;align-items:center;gap:4px}
+.modal .star-picker button{min-width:0;border:0;background:none;padding:2px 3px;font-size:30px;line-height:1;color:#d5dde2}
+.modal .star-picker button.on{color:#e0a73c}
+.modal .star-picker button:focus-visible{outline:2px solid #217d87;border-radius:4px}
+.star-picker em{margin-left:10px;font-style:normal;font-size:12px;color:#6b7a88}
+button:focus-visible,select:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid #217d87;outline-offset:2px}
+@media(max-width:650px){.hero{padding:18px}.steps li{font-size:11px}}
